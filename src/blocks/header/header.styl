@@ -1,10 +1,32 @@
 .header
     height 70px
+    margin 0 auto
+    max-width 1160px
     display flex
+    align-items center
 
-    &__nav a
-        color $colorGray50
-        Font(Montserrat ,14px, 17px, normal)
+
+    &__nav
+        flex-grow 1
+
+        & ul
+            float right
+
+        & li
+            display inline
+            margin-right 20px
+
+            &:nth-child(2)
+                margin-right 44px
+
+            &:nth-child(5)
+                margin-right 44px
+
+        & a
+            color $colorGray50
+            Font(Montserrat, 14px, 17px, normal)
+            position relative
+
 
     &__button-entry
         color $colorViolet
@@ -19,3 +41,8 @@
         width: 196px;
         height: 34px;
         padding-top 9px
+        margin-left 20px
+
+    &__material-icons
+        top -4px
+
