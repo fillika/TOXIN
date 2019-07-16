@@ -30,6 +30,34 @@
         & label 
             cursor pointer
 
+            &:after
+                position absolute
+                content: '';
+                display block
+                width 20px
+                height 20px    
+                border: 1px solid #BC9CFF
+                border-radius: 10px
+                top 0px
+                left -30px
+
+            &:before
+                position absolute
+                content: '';
+                display block
+                width 12px
+                height 12px
+                background $colorVioletGrad    
+                border-radius: 10px
+                top 5px
+                left -25px
+                opacity 0
+
+    &__male, &__female
+        position relative
+        margin-right 20px
+        margin-left 30px
+
     &__date-birth
         margin-top 20px
     
@@ -40,6 +68,9 @@
         Font(Montserrat, 14px, 24px, normal)
         color $colorGray75
         margin-top 10px
+
+        & label
+            cursor pointer
 
     &__input
     
@@ -70,4 +101,16 @@
 
     &__text
         Font(Montserrat, 14px, 18px, normal)
+
+    &__radio-input
+        position absolute
+        opacity 0
+
+        &:checked + .rectangle__label:before
+            opacity 1
+
+    &__checkbox-offer
+        position absolute
+        opacity 0
+
         
