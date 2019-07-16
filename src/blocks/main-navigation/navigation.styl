@@ -1,8 +1,17 @@
 .main-navigation
-    margin 0 auto
-    max-width 1160px
+    max-width 1440px
     display flex
-    justify-content space-between
+    height 372px
+    align-items center
+    border-bottom 1px solid #E5E5E5;
+    border-top 1px solid #E5E5E5;
+
+    &__container
+        width 1160px
+        display flex
+        justify-content space-between
+        flex-wrap wrap
+        margin 0 auto
 
     &__info
         width 260px
@@ -24,3 +33,24 @@
         margin-top 20px
         Font(Montserrat, 14px, 24px, normal)
         color $colorGray75
+
+    &__input
+        width 260px
+        margin-top 20px
+        color $colorGray25
+
+    &__form
+        position relative
+
+    &__material-icons
+        display block
+        text-align center
+        width 44px
+        height 44px
+        top 30px
+        right 0px
+        font-size 24px
+        background $colorVioletGrad
+        background-clip text
+        -webkit-background-clip text
+        -webkit-text-fill-color transparent
