@@ -4,6 +4,9 @@
     height 1357px
     display flex
 
+    &_margin_top
+        margin-top 30px
+
 .dots
     position absolute
     z-index 5
@@ -149,6 +152,8 @@
 
 .variables
     width 100%
+    position relative
+    height 100%
 
     &_margin-left
         margin-left 59px
@@ -160,10 +165,12 @@
 
     &__text
         Font(Quicksand, 24px, 30px, bold)
+        margin-bottom 20px
 
     &__wrapper
         width: 270px;
         height: 257px;
+        margin-bottom 20px
 
     &__img
         position relative
@@ -227,6 +234,41 @@
             font-weight normal
             font-size 12px
 
+    &__list 
+        width 250px
+    
+        & li
+            display inline-block
+            width: 40px;
+            height: 40px;
+            border-radius: 22px;
+            text-align center
+            padding-top 12px
+            Font(Montserrat ,12px, 15px, normal)
+
+        & li:nth-child(1)
+            background: $colorVioletGrad
+            font-weight bold
+
+            & a
+                color #fff 
+
+    &__switch
+        position absolute
+        left 50%
+        transform translate(-50%, 0)
+        bottom 70px
+
+        & section:nth-child(1) 
+            position relative
+
+        & section:nth-child(2) 
+            Font(Montserrat ,14px, 24px, normal)
+            color $colorGray75
+            text-align center
+            margin-top 10px
+
+
 
 .material-icons
 
@@ -257,3 +299,16 @@
 
     &_arrow_left
         left -40px
+
+    &__variables
+        position absolute
+        display block
+        width: 40px
+        height: 40px
+        background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+        border-radius: 22px;
+        color #fff
+        text-align center
+        padding-top 8px
+        left 215px
+        top 0

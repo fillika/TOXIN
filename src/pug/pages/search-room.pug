@@ -32,7 +32,7 @@ mixin room(href, number, price, reviev, star1, star2, luxe)
 
 
 .wrapper
-    .search-room
+    div(class="search-room search-room_margin_top")
         .filter
             .filter__dates
                 h5.h5 Даты пребывания в отеле
@@ -94,3 +94,19 @@ mixin room(href, number, price, reviev, star1, star2, luxe)
                 +room('img/image-10.png', ' 666', '5 000₽ ', '25 ', 'star', 'star', ' люкс')
                 +room('img/image-9.png', ' 444', '5 000₽ ', '15 ', 'star_border', 'star_border')
                 +room('img/image 2.png', ' 352', '5 000₽ ', '55 ', 'star_border', 'star_border')
+            .variables__switch
+                section
+                    ul(class="variables__list")
+                        li
+                            a(href="#") 1
+                        li
+                            a(href="#") 2
+                        li
+                            a(href="#") 3
+                        li
+                            a(href="#") ...
+                        li
+                            a(href="#") 15
+                    a(href="#")
+                        <i class="material-icons material-icons__variables">arrow_forward</i>
+                section 1 – 12 из 100+ вариантов аренды
