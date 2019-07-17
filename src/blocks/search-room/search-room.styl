@@ -4,6 +4,24 @@
     height 1357px
     display flex
 
+.dots
+    position absolute
+    z-index 5
+    bottom 15px
+    right 15px
+
+    span 
+        display inline-block
+        width 7.5px
+        height 7.5px
+        border: 1px solid #FFFFFF;
+        border-radius 50%
+        margin-left 3.75px
+
+    span:nth-child(1)
+        background #fff
+
+
 .h5
 
     &__extra-convenience
@@ -149,6 +167,15 @@
 
     &__img
         position relative
+        overflow hidden
+
+        &:hover .material-icons_arrow_right
+            right 0px
+
+        &:hover .material-icons_arrow_left
+            left 0px
+
+
 
         & img 
             border-radius 4px 4px 0 0
@@ -201,8 +228,32 @@
             font-size 12px
 
 
-.material-icons__star
-    background $colorVioletGrad
-    background-clip text
-    -webkit-background-clip text
-    -webkit-text-fill-color transparent
+.material-icons
+
+    &__star
+        background $colorVioletGrad
+        background-clip text
+        -webkit-background-clip text
+        -webkit-text-fill-color transparent
+
+    &_arrow_right, &_arrow_left
+        display block
+        width: 42px;
+        height: 151px;
+        padding-top 60px
+        position absolute
+        top 49%
+        transform translate(0%, -50%)
+        color #fff
+        z-index 5
+        transition .25s ease
+        cursor pointer
+        text-align center
+        box-shadow: inset 20px 0px 20px 0px $colorGray25;
+
+    &_arrow_right
+        right -40px
+        box-shadow: inset -20px 0px 20px 0px $colorGray25;
+
+    &_arrow_left
+        left -40px
