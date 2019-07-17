@@ -1,0 +1,133 @@
+.search-room
+    margin 0 auto
+    max-width 1160px
+    height 1357px
+    display flex
+
+.h5
+
+    &__extra-convenience
+        position relative
+
+    &__material-icons
+        position absolute
+        top -5px
+        right 10px
+        color $colorGray50
+
+
+.filter
+    width 270px
+
+    &__dates
+        position relative
+
+    &__input
+        width 266px
+        margin-top 5px
+
+    &__material-icons
+        position absolute
+        color $colorGray50
+        text-align: center;
+        top 30px
+        right 10px
+
+    &__guest
+        position relative
+        margin-top 20px
+
+    &__price
+        margin-top 30px
+
+    &__range-price
+        display flex
+        justify-content space-between
+
+    &__price-input
+        margin-top 23px
+
+    &__price-output
+        Font(Montserrat ,12px, 15px, normal)
+        color $colorGray50
+
+    &__price-info
+        Font(Montserrat ,12px, 14px, normal)
+        color $colorGray50
+        margin-top 12px
+
+    &__checkbox
+        margin-top 30px
+
+        &-input
+            position absolute
+            opacity 0
+
+            &:checked + .filter__checkbox-label:after
+                opacity 1
+
+            &:checked + .filter__checkbox-label:before
+                border: 1px solid $colorViolet
+
+        &-div
+            margin-top 12px
+            margin-left 30px
+
+            &_margin_top17
+                margin-top 17px
+
+    &__checkbox-label
+        position relative
+        Font(Montserrat ,14px, 18px, normal)
+        color $colorGray50
+        cursor pointer
+        
+        &_style_bold
+            font-weight bold
+            color $colorGray75
+
+        &:before
+            content ''
+            display block
+            position absolute
+            width: 20px;
+            height: 20px;
+            left -30px
+            top -3px
+            border: 1px solid $colorGray25
+            border-radius: 4px;
+
+        &:after
+            content ''
+            display block
+            position absolute
+            width: 6px;
+            height: 8px;
+            left -23px
+            top 1px
+            border-right: 2px solid $colorViolet
+            border-bottom: 2px solid $colorViolet
+            transform: rotate(45deg);
+            opacity 0
+            
+
+
+
+
+    &__availability
+        margin-top 30px
+
+    &__descripton
+        Font(Montserrat ,12px, 14px, normal)
+        color $colorGray50
+        margin-top 5px
+
+    &__convenience
+        position relative
+        margin-top 30px
+
+    &__extra-convenience
+        margin-top 30px
+
+.variables
+    width 100%

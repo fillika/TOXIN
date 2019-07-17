@@ -1,0 +1,49 @@
+.wrapper
+    .search-room
+        .filter
+            .filter__dates
+                h5.h5 Даты пребывания в отеле
+                input(type="text" class="input filter__input")
+                <i class="material-icons filter__material-icons">keyboard_arrow_down</i>
+            .filter__guest
+                h5.h5 гости
+                input(type="text" class="input filter__input")
+                <i class="material-icons filter__material-icons">keyboard_arrow_down</i>
+            .filter__price
+                .filter__range-price
+                    h5.h5 Диапазон цены
+                    .filter__price-output 5 000₽ - 10 000₽
+                .filter__price-input
+                    input(type="range")
+                .filter__price-info Стоимость за сутки пребывания в номере
+            .filter__checkbox
+                h5.h5 Checkbox Buttons
+                div(class="filter__checkbox-div filter__checkbox-div_margin_top17")
+                    input(type="checkbox" id="smokes" class="filter__checkbox-input")
+                    label(for="smokes" class="filter__checkbox-label") Можно курить
+                div(class="filter__checkbox-div")
+                    input(type="checkbox" id="pets" class="filter__checkbox-input")
+                    label(for="pets" class="filter__checkbox-label") Можно с питомцами
+                div(class="filter__checkbox-div")
+                    input(type="checkbox" id="guests" class="filter__checkbox-input")
+                    label(for="guests" class="filter__checkbox-label") Можно пригласить гостей <br> (до 10 человек)
+            .filter__availability
+                h5.h5 доступность
+                div(class="filter__checkbox-div filter__checkbox-div_margin_top17")
+                    input(type="checkbox" id="coridor" class="filter__checkbox-input")
+                    label(for="coridor" class="filter__checkbox-label  filter__checkbox-label_style_bold") Широкий коридор
+                    div(class="filter__descripton") Ширина коридоров в номере не менее 91 см.
+                div(class="filter__checkbox-div")
+                    input(type="checkbox" id="helper" class="filter__checkbox-input")
+                    label(for="helper" class="filter__checkbox-label  filter__checkbox-label_style_bold") Помощник для инвалидов
+                    div(class="filter__descripton") На 1 этаже вас встретит специалист  и проводит до номера.
+            .filter__convenience
+                h5.h5 удобства номера
+                input(type="text" class="input filter__input")
+                <i class="material-icons filter__material-icons">keyboard_arrow_down</i>
+            .filter__extra-convenience
+                div(class="h5 h5__extra-convenience") дополнительные удобства
+                    <i class="material-icons h5__material-icons">keyboard_arrow_down</i>
+
+
+        .variables
