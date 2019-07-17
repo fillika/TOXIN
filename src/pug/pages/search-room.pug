@@ -1,3 +1,28 @@
+mixin room(href, number, price, reviev, star1, star2, luxe)
+    .variables__wrapper
+        .variables__img
+            img(src=href)
+        .variables__info
+            section
+                div(class="variables__number")
+                    span №
+                    span=number
+                    span=luxe
+                .variables__price
+                    span=price
+                    span в сутки
+            section
+                .variables__stars
+                    i(class="material-icons material-icons__star") star
+                    i(class="material-icons material-icons__star") star
+                    i(class="material-icons material-icons__star") star
+                    i(class="material-icons material-icons__star")=star1
+                    i(class="material-icons material-icons__star")=star2
+                .variables__review
+                    span=reviev
+                    span Отзывов
+
+
 .wrapper
     .search-room
         .filter
@@ -47,3 +72,6 @@
 
 
         .variables
+            .variables__text Номера, которые мы для вас подобрали
+            .variables__rooms
+                +room('img/image-1.png', '888', '9 990₽', '145', 'star', 'star', 'люкс')
