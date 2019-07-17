@@ -1,7 +1,8 @@
 mixin room(href, number, price, reviev, star1, star2, luxe)
     .variables__wrapper
         .variables__img
-            img(src=href)
+            a(href="#")
+                img(src=href)
         .variables__info
             section
                 div(class="variables__number")
@@ -71,7 +72,18 @@ mixin room(href, number, price, reviev, star1, star2, luxe)
                     <i class="material-icons h5__material-icons">keyboard_arrow_down</i>
 
 
-        .variables
+        div(class="variables variables_margin-left")
             .variables__text Номера, которые мы для вас подобрали
             .variables__rooms
-                +room('img/image-1.png', '888', '9 990₽', '145', 'star', 'star', 'люкс')
+                +room('img/image-1.png', ' 888', '9 990₽ ', '145 ', 'star', 'star', ' люкс')
+                +room('img/image.png', ' 840', '9 990₽ ', '65 ', 'star', 'star_border')
+                +room('img/image-2.png', ' 980', '8 500₽ ', '35 ', 'star_border', 'star_border', ' люкс')
+                +room('img/image-5.png', ' 856', '7 300₽ ', '19 ', 'star', 'star')
+                +room('img/image-3.png', ' 740', '6 000₽ ', '44 ', 'star', 'star_border')
+                +room('img/image-4.png', ' 982', '5 800₽ ', '56 ', 'star_border', 'star_border')
+                +room('img/image-8.png', ' 678', '5 500₽ ', '45 ', 'star', 'star')
+                +room('img/image-6.png', ' 450', '5 300₽ ', '39 ', 'star', 'star_border')
+                +room('img/image-7.png', ' 350', '5 000₽ ', '77 ', 'star_border', 'star_border')
+                +room('img/image-10.png', ' 666', '5 000₽ ', '25 ', 'star', 'star', ' люкс')
+                +room('img/image-9.png', ' 444', '5 000₽ ', '15 ', 'star_border', 'star_border')
+                +room('img/image 2.png', ' 352', '5 000₽ ', '55 ', 'star_border', 'star_border')
